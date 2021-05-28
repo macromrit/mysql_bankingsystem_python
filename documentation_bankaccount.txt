@@ -1,0 +1,84 @@
+                                                                உ
+_______________________________________________________________________________________________________________________________________________________
+
+                ^Title: Banckaccount Software
+                
+                ^Core Programming Language: Python
+                
+                ^Database used: Mysql(via mysql.connector)
+                
+                ^Programmer's name: C.Amrit Subramanian(a.k.a: Macromrit)
+                
+                ^Program's team: C.Amrit Subramanian(Solo)
+
+                
+                ^Agenda:
+                    -> To make the software user-friendly.
+                    -> software shouldn't throw errors, if input ain't the type it wants .
+                    -> software gotta have a menu to create delete and potray the history of users, for the bank it tires.
+                    -> should have deposit and withdraw features.
+                    -> should accomidate transcation aspects.i.e transferring funds from a user to another.
+                    -> should validate users(via username and passcode).. if a user wants to terminate or continue a process via his/her account.
+                    -> gotta make the output pretty and graceful to inherit a bankish(is that a word :), hopefully! ya got what I'm trying to convey) ambience.
+                    -> to make the code non-tedious and tiny.. gonna use functions for all the major, fundamental features.
+
+                
+                ^flaws to refrain:
+                    -> should never ever forget about adding the commit function after database manipulation.
+                    -> gotta be skeptical about if else statments .
+                    -> should be judicious regarding try except errors.
+                    -> should make the database well secured to avoid and be resilient while hackers are try to inject it.
+
+                
+                ^Major functions that should be professed by the software:
+                    -> user-signup ^
+                    -> user-termination ^
+                    -> user-transactions ^
+                    -> user-history potrayal ^
+                    
+                    ^   ^   ^       ^   ^   ^       ^   ^   ^   ^       ^   ^   ^   ^   ^       ^   ^   ^   ^   ^
+                    |   |   |       |   |   |       |   |   |   |       |   |   |   |   |       |   |   |   |   |
+                    withdrwal       deposital       fund transfer       Account Creations       Account Deletions
+
+
+                ^server side missions[these should me made right befor running the program in your P.C(personal computer)]:
+                    table name: bankaccount
+                    table inherited by "BANKACCOUNT" database
+
+                    table1] 
+                    name: bankusers_main
+                    table incorporated elements :
+                        -> name varchar(80)
+                        -> passcode varchar(50)
+                        -> used_id char(10)
+                        -> balance FLOAT
+                        -> date_created TIMESTAMP PRIMAY KEY
+
+                    table1] 
+                    name: bankusers_history
+                    table incorporated elements :
+                        -> name varchar(80)
+                        -> with_depo varchar(20)
+                        -> ticky TIMESTAMP PRIMARY KEY
+                        -> amount FLOAT
+
+                    table1] 
+                    name: bankusers_transferr
+                    table incorporated elements :
+                        -> sender_name varchar(80)
+                        -> reciever_name varchar(80)
+                        -> reciever_id char(10)
+                        -> amount FLOAT
+                        -> date_created TIMESTAMP PRIMARY KEY
+
+                
+                ^Workon Guide(How To use this software):
+                    -> basically its a menu driven program.
+                    -> start by inputing 'C' if you haven't registered an account under your name yet.
+                    -> after creating an account, it would potray ya a recipt based output where ya should remember the unique id that the software provides 
+                    -> after roting your id.. kick off with other assortments, which the software offers.
+                    -> well smash it up.. Good Luck.. Thanks for supporting
+
+_______________________________________________________________________________________________________________________________________________________
+
+
